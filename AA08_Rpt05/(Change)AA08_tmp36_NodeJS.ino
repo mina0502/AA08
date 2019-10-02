@@ -28,7 +28,7 @@ void loop() {
    // now print out the temperature
    
    float temperatureC = (voltage - 500) / 10 ;  
-   Serial.println(" "+String(temperatureC)); 
+   Serial.println(" "+String(temperatureC));  //공백 
   // Serial.println(" degrees C");
 
   delay(1000);
