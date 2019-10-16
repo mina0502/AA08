@@ -24,6 +24,6 @@ AA08_multi_signals.js
 cds_node.js
 cds_tmp36_node.js
 ==================================
-### **node 에서 가장 중요한 곳 ★**
+### node 에서 가장 중요한 곳 ★
 Serial.println ===> node npm 에서 실행하기 위해서는 마지막 부분
 Serial에서 println 을 써줘야한다.
