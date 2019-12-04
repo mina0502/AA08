@@ -1,0 +1,36 @@
+cmd //  Import and Export
+
+mongoimport -d dbName -c collectionName --type csv --headerline --file
+fileName.csv
+
+
+mongoexport –d iot5 -c sensors --sort “{_id: -1}” --limit=500 --fields
+date,temperature,humidity,luminosity --type=csv --out s500.csv
+
+모든 정보
+mongoexport -d iot2 -c sensors --fields date,temperature,humidity,luminosity --type=csv --out aa08_all.csv
+
+========== 오래된 데이터 ========
+
+“{_id: 1}” 
+
+
+=========== 최근 데이터 =========
+
+“{_id: -1}” 
+
+
+=========== Mongo shell ==============
+
+ show dbs
+
+ use 파일명
+
+ show collections
+
+ db.sensors.find().pretty()
+
+ db.sensors.count()
+
+db.sensors.find().sort({_id: -1}).limit(n개) 
+
